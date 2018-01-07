@@ -1,0 +1,9 @@
+client:
+  hosts:
+   - elasticsearch-5.6.marathon.services.newsriver.io
+  port: 9200
+logging:
+  loglevel: INFO
+  logfile: "/var/log/curator.log"
+  logformat: default
+  blacklist: ['elasticsearch', 'urllib3']
